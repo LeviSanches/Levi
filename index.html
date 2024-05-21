@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Levi Sanches">
+  <meta name="description" content="Levi Sanches - Desenvolvedor Web">
+  <meta property="og:image" content="/images/levisanches-capa.png">
+  <link rel="stylesheet" href="src/css/styles.css">
+  <script src="https://kit.fontawesome.com/241ed77ca6.js" crossorigin="anonymous"></script>   
+  <title>Portfólio Pessoal</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul id="nav">        
+        <li onclick="showSection('main')">Levi Sanches</li>
+        <li onclick="showSection('portfolio')">Portfólio</li>
+        <li onclick="showSection('about')">Sobre mim</li>
+        <li onclick="showSection('skills')">Formação</li> 
+        <li onclick="showSection('contact')">Contato</li> 
+      </ul>       
+    </nav>
+    <div id="button-nav" onclick="buttonNav()">
+      <i class="fa-solid fa-bars fa-2xl" style="color: #4a66b6;"></i>
+      <ul id="nav-mobile">        
+        <li onclick="showSection('main')">Levi Sanches</li>
+        <li onclick="showSection('portfolio')">Portfólio</li>
+        <li onclick="showSection('about')">Sobre mim</li>
+        <li onclick="showSection('skills')">Formação</li> 
+        <li onclick="showSection('contact')">Contato</li> 
+      </ul>  
+    </div>    
+  </header>
+  <main>
+    <section id="main" class="active">
+      <article>
+        <img id="foto-levi" src="src/images/levi.jpeg" alt="">
+        <h1>Levi Sanches</h1>
+        <span>Desenvolvedor Web</span>
+        <a href="src/images/Currículo Levi.pdf" download="Currículo Levi.pdf"><button>Currículo aqui</button></a>
+        <ul>
+          <div>
+            <li><a href="https://www.instagram.com/levi_sanchesz/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #0b101f;"></i></a></li>
+          </div>
+          <div>
+            <li><a href="https://www.linkedin.com/in/levi-sanches/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0b101f"></i></a></li>
+          </div>
+          <div>
+            <li><a href="https://wa.me/5575982023426" target="_blank"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #0b101f;"></i></a></li>
+          </div>
+        </ul>
+      </article>
+    </section>
+    <section id="about">
+      <h1>Quer saber um pouco sobre mim?</h1>  
+      <article>
+        <p>Tive meu primeiro contato com um computador aos 4 anos de idade e desde então sempre me identifiquei com a área de TI, embora programação nunca tenha passado pela minha cabeça. Talvez isso se devesse ao fato de que antigamente esse assunto não fosse tão comum no meu ciclo social.</p>
+        <br>
+        <p>O caminho para a programação teve início no ensino médio, onde optei por fazer o curso técnico de informática integrado ao ensino médio. Tive contato com os primeiros algoritmos e fundamentos da programação, mas até então a área com a qual eu mais me identificava era como o famoso "técnico de informática".</p>
+        <br>
+        <p>O tempo passou e não consegui me firmar como técnico, mas o conhecimento sempre permaneceu comigo. Trabalhei como auxiliar de escritório a maior parte da minha vida e sempre tive a oportunidade de colocar em prática a resolução de problemas diários em relação à informática.</p>
+        <br>
+        <p>Meu interesse pela programação surgiu quando comecei a estudar no curso de Análise e Desenvolvimento de Sistemas. Foi então que decidi que queria me tornar um programador e fiz da programação minha meta de vida.</p>
+      </article>
+    </section>
+    <section id="portfolio">
+      <h1>Projetos</h1>
+      <article>
+        <a href="https://levisanches.github.io/Portfolio/" target="_blank" id="portfolio-1">
+          <figure>
+            <img src="src/images/portfólio.png" alt="">
+            <figcaption>
+              <h1>Landing Page (portfólio)</h1>
+              <p>Landing page clássica do meu primeiro site portfólio</p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://suagendabarber.siseven.com.br/" target="_blank" id="portfolio-2">
+          <figure>
+            <img src="src/images/suagendabarber.png" alt="">
+            <figcaption>
+              <h1>Landing Page (Site oficial)</h1>
+              <p>Site oficial de apresentação da minha aplicação web de agendamento para barbearias.</p>
+            </figcaption>
+          </figure>
+        </a>   
+        <a href="https://edsonbarber.siseven.com.br/" target="_blank" id="portfolio-3">
+          <figure>
+            <img src="src/images/edsonbarber.png" alt="">
+            <figcaption>
+              <h1>Aplicação web (Edson Barber)</h1>
+              <p>Site da aplicação de agendamento (lado do cliente) para realização de agendamentos online</p>
+            </figcaption>
+          </figure>
+        </a>    
+        <a href="https://grauecorte.siseven.com.br/" target="_blank" id="portfolio-4">
+          <figure>
+            <img src="src/images/grauecorte.png" alt="">
+            <figcaption>
+              <h1>Aplicação web (Grau & Corte)</h1>
+              <p>Site da aplicação de agendamento (lado do cliente) para realização de agendamentos online</p>
+            </figcaption>
+          </figure>
+        </a>     
+        <a href="https://github.com/LeviSanches/api-BotWhatsapp" target="_blank" id="portfolio-5">
+          <figure>
+            <img src="src/images/whatsapp.jpg" alt="">
+            <figcaption>
+              <h1>Bot para envio de mensagens</h1>
+              <p>Api de envio de mensagens de whatsapp que foi implementado na aplicação de agendamento.</p>
+            </figcaption>
+          </figure>
+        </a>       
+      </article>
+    </section>
+    <section id="skills">
+      <h1>Habilidades e Formação</h1>
+      <div>
+        <article id="frontend">
+          <h2>Frontend</h2>
+          <ul>
+            <li>
+              <img src="src/images/angular-icon-logo.png" alt="">
+              <p><strong>(Angular)</strong> Conhecimento em: Componentes, Modulos, Diretivas, Decorators, Serviços, Interpolação de strings, Pipes e Data Binding.</p>
+            </li> 
+            <li>
+              <img src="src/images/js.png" alt="">
+              <p><strong>(JavaScript)</strong> Conhecimento básico e intermediário, como funções assíncronas e consumo de APIs.</p>
+            </li>
+            <li>
+              <img src="src/images/typescript.png" alt="">
+              <p><strong>(TypeScript)</strong> Conhecimento em relação as tipagens, classes, heranças, módulos, importações/exportações e transpilação.</p>
+            </li>                      
+            <li>
+              <img src="src/images/bootstrap.png" alt="">
+              <p><strong>(Bootstrap)</strong> Conhecimento na aplicação das classes do bootstrap.</p>
+            </li>
+          </ul>
+        </article>
+        <article id="backend">
+          <h2>Backend</h2>
+          <ul>
+            <li>
+              <img src="src/images/java.png" alt="">
+              <p><strong>(Java)</strong> Conhecimento nos conceitos e aplicação da orientação a objetos e as particularidades da sintaxe do Java.</p>
+            </li>
+            <li>
+              <img src="src/images/spring.png" alt="">
+              <p><strong>(Spring)</strong> Conhecimento básico em conexão com banco de dados e crud. (Atualmente estudando)</p>
+            </li>
+            <li>
+              <img src="src/images/nodejs.png" alt="">
+              <p><strong>(NodeJS)</strong> Conhecimento em CRUD utilizando o módulo Express e alguns outros módulos como: Sequelize, Handlebars, Sessions.</p>
+            </li>
+            <li>
+              <img src="src/images/mysql.png" alt="">
+              <p><strong>(MySQL)</strong> Conhecimento na conexão, consultas e operações.</p>
+            </li>
+          </ul>
+        </article>
+        <article id="deploy">
+          <h2>Deploy</h2>
+          <ul>
+            <li>
+              <img src="src/images/linux.png" alt="">
+              <p><strong>(Linux)</strong> Conhecimento na utilização do linux 100% terminal. utilização de uma VPS para manter e administrar arquivos em um servidor linux.</p>
+            </li>
+            <li>
+              <img src="src/images/nginx.png" alt="">
+              <p><strong>(Nginx)</strong> Conhecimento em deploy de aplicações e sites utilizando o servidor web Nginx.</p>
+            </li>
+            <li>
+              <img src="src/images/pm2.png" alt="">
+              <p><strong>(PM2)</strong> Conhecimento em rodar aplicações em nodejs simultaneamente dentro de um servidor</p>
+            </li>             
+          </ul>
+        </article>
+        <article id="deploy">
+            <h2>Educacional</h2>
+            <ul>
+              <li>
+                <img src="src/images/Icons8-Windows-8-Science-School.512.png" alt="">
+                <p><strong>(Ensino Médio/Técnico - Informática)</strong> Formação no ensino médio juntamente com o curso técnico na área da informática.</p>
+              </li>
+              <li>
+                <img src="src/images/Ionic-Ionicons-School-sharp.512.png" alt="">
+                <p><strong>(Faculdade - Análise e Desenvolvimento de Sistemas)</strong> Ensino superior tecnologo na área de Desenvolvimento de Sistemas, onde busco me especializar para o mercado de trabalho</p>
+              </li>         
+            </ul>
+          </article>
+      </div>
+    </section>
+    <section id="contact">
+        <h1>Contato</h1>  
+        <article>
+            <form>      
+                <input name="name" type="text" class="feedback-input" placeholder="Nome" />   
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Comentário"></textarea>
+                <input type="submit" value="Enviar"/>
+              </form>
+        </article>
+      </section>
+  </main> 
+  <script src="src/js/scripts.js"></script>   
+</body>
+</html>
